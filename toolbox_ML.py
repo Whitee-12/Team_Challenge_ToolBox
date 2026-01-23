@@ -71,7 +71,7 @@ def tipifica_variables(df: pd.DataFrame, umbral_categoria: int, umbral_continua:
 import pandas as pd
 from scipy.stats import pearsonr
 
-def selecciona_variables_corr(df: pd.DataFrame, target_col: str, umbral_corr: float, pvalue: float = None):
+def get_features_num_regression(df: pd.DataFrame, target_col: str, umbral_corr: float, pvalue: float = None):
     # --- Comprobaciones ---
     if not isinstance(df, pd.DataFrame):
         print("El argumento df debe ser un DataFrame de pandas.")
@@ -217,7 +217,7 @@ import pandas as pd
 import numpy as np
 from scipy.stats import ttest_ind, f_oneway
 
-def get_categorical_relationships_regression(df, target_col, pvalue=0.05):
+def get_features_cat_regression(df, target_col, pvalue=0.05):
     """
     Devuelve las columnas categóricas del dataframe cuya relación con el target
     numérico es estadísticamente significativa según t-test o ANOVA.
