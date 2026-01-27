@@ -49,11 +49,11 @@ features = get_features_num_regression(df, target_col="fare", umbral_corr=0.3, p
 
 ---
 
-##🧑‍🤝‍🧑 Autores:
-Este proyecto ha sido desarrollado por el equipo de cinco integrantes:
-•	👤 Blanca García– @Whitee-12
-•	👤 Eric Calvo – @ecalvo2411
-•	👤 Marcos Martinez– @mmsbi02
-•	👤 Iván Gómez – @betaivan-10
-•	👤 Fran Rubio
+## 🧑‍🤝‍🧑 Autores:
+- Este proyecto ha sido desarrollado por el equipo de cinco integrantes:
+    -	👤 Blanca García– @Whitee-12
+    - 	👤 Eric Calvo – @ecalvo2411
+    -	👤 Marcos Martinez– @mmsbi02
+    -   👤 Iván Gómez – @betaivan-10
+    -   👤 Fran Rubio
 
