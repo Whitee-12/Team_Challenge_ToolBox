@@ -72,6 +72,20 @@ import pandas as pd
 from scipy.stats import pearsonr
 
 def get_features_num_regression(df: pd.DataFrame, target_col: str, umbral_corr: float, pvalue: float = None):
+    """
+    Selecciona variables numéricas cuya correlación con un target de regresión
+    supera un umbral definido, y opcionalmente pasa un test de significación
+    estadística.
+
+    Argumentos:
+    df (pd.DataFrame): DataFrame de entrada.
+    target_col (str): Nombre de la columna objetivo (numérica).
+    umbral_corr (float): Umbral mínimo de correlación (entre 0 y 1).
+    pvalue (float, opcional): Nivel de significación estadística. Por defecto None.
+
+    Retorna:
+    list: Lista de columnas numéricas seleccionadas o None si hay error.
+    """
     # --- Comprobaciones ---
     if not isinstance(df, pd.DataFrame):
         print("El argumento df debe ser un DataFrame de pandas.")
