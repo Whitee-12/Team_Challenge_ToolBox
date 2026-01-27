@@ -1,4 +1,3 @@
-# Team_Challenge_ToolBox
 # 🧰 Team Challenge: Toolbox para Machine Learning
 
 Este proyecto forma parte del Team Challenge del curso, cuyo objetivo es desarrollar un módulo de herramientas en Python para facilitar el análisis y selección de variables en problemas de Machine Learning. El resultado es un conjunto de funciones útiles para explorar, tipificar y seleccionar variables, tanto numéricas como categóricas, en contextos de regresión y llevarlas a la visualización.
@@ -46,10 +45,15 @@ df = cargar_dataset_titanic()
 print(describe_df(df))
 print(tipifica_variables(df, umbral_categoria=10, umbral_continua=0.6))
 features = get_features_num_regression(df, target_col="fare", umbral_corr=0.3, pvalue=0.05)
-#🧑‍🤝‍🧑 Autores:
+```
+
+---
+
+##🧑‍🤝‍🧑 Autores:
 Este proyecto ha sido desarrollado por el equipo de cinco integrantes:
 •	👤 Blanca García– @Whitee-12
 •	👤 Eric Calvo – @ecalvo2411
 •	👤 Marcos Martinez– @mmsbi02
-•	👤 Iván Gómez
+•	👤 Iván Gómez – @betaivan-10
 •	👤 Fran Rubio
+
